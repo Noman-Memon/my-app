@@ -1,15 +1,33 @@
+import { useState } from 'react'
 import './App.css'
 import Navebar from './components/Navebar'
 import TextForm from './components/TextForm'
+import Alert from './components/Alert'
 
 // let name = 'Noman'
 function App() {
+  const [mode, setmode] = useState('light')
+  const togglemode = () => {
+    if (mode === 'light') {
+      setmode('dark')
+    } else {
+      setmode('light')
+    }
+  }
+
   return (
     <>
-      <Navebar title="Textutils" about="About" />
+      <Navebar
+        title="Textutils"
+        about="About"
+        mode={mode}
+        togglemode={togglemode}
+      />
+      <Alert alert="This is alert box" />
+
       {/* <Navebar /> */}
       <div className="container my-3">
-        <TextForm heading="Enter your text analyze" />
+        <TextForm heading="Enter your text analyze" mode={mode} />
       </div>
     </>
   )
