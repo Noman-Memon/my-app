@@ -4,32 +4,43 @@ import Navebar from './components/Navebar'
 import TextForm from './components/TextForm'
 import Alert from './components/Alert'
 import About from './components/About'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 // let name = 'Noman'
 function App() {
-  const [mode, setmode] = useState('light')
+  const [mode, setMode] = useState('light')
   const togglemode = () => {
     if (mode === 'light') {
-      setmode('dark')
+      setMode('dark')
     } else {
-      setmode('light')
+      setMode('light')
     }
   }
 
   return (
     <>
       {/* <Navebar /> */}
-      <Navebar
-        title="Textutils"
-        // about={'About'}
-        mode={mode}
-        togglemode={togglemode}
-      />
-      <Alert alert="This is alert box" />
+      <Router>
+        <Navebar
+          title="Textutils"
+          // about={'About'}
+          mode={mode}
+          togglemode={togglemode}
+        />
+        <Alert alert="This is alert box" />
 
-      <div className="container my-3">
-        <TextForm heading="Enter your text analyze" mode={mode} />
-      </div>
+        <div className="container my-3">
+          <Switch>
+            <Route exact path="/about">
+              <About />
+            </Route>
+
+            <Route exact path="/">
+              <TextForm heading="Enter your text analyze" mode={mode} />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
     </>
   )
 }
