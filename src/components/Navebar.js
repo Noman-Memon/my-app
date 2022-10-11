@@ -50,7 +50,7 @@ function Navebar(props) {
             <label
               className="form-check-label"
               htmlFor="flexSwitchCheckDefault"
-              style={{ color: props.mode === 'dark' ? 'white' : 'dark' }}
+              style={{ color: props.mode === 'dark' ? 'white' : 'grey' }}
             >
               Click to switch
             </label>

@@ -24,7 +24,7 @@ function TextForm(props) {
     <>
       <div
         className="container"
-        style={{ color: props.mode === 'dark' ? 'grey' : 'light' }}
+        style={{ color: props.mode === 'dark' ? 'grey' : 'black' }}
       >
         <h1>{props.heading}</h1>
         <div className="mb-3">
@@ -33,8 +33,8 @@ function TextForm(props) {
             value={text}
             onChange={handleOnchange}
             style={{
-              background: props.mode === 'dark' ? 'grey' : 'light',
-              color: props.mode === 'dark' ? 'white' : 'light',
+              background: props.mode === 'dark' ? 'grey' : 'white',
+              color: props.mode === 'dark' ? 'white' : 'grey',
             }}
             id="myBox"
             rows="8"
