@@ -31,14 +31,15 @@ function App() {
 
         <div className="container my-3">
           <Switch>
-            <Route exact path="/about">
+            <Route path="/about">
               <About />
             </Route>
 
-            <Route exact path="/">
+            <Route path="/">
               <TextForm heading="Enter your text analyze" mode={mode} />
             </Route>
           </Switch>
+          
         </div>
       </Router>
     </>
