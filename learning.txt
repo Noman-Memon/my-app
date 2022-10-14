@@ -1,0 +1,20 @@
+github--> nomanjbl --> noman.rauf@jamalbrothers.com.pk--> Noman!@#78686
+gmail-->  noman.rauf@jamalbrothers.com.pk--> noman78686
+postman--> noman-jbl
+
+1. functional components
+2. redux tool kit (dispatch, use slecter)
+3. props
+4. state handling
+5. use effect, use state, use callback, use memo (hooks)
+6. callback functions
+7. loops, maps
+8. api handling
+7. material ui
+8. conditional rendering
+9. report pdf (npm i @react-pdf/renderer)
+
+odoo
+
+test--> leraner--> noman.rauf@jamalbrothers.com.pk--> 5-20 employees
+database-- test-- ps:noman78686
