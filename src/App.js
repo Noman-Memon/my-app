@@ -27,7 +27,7 @@ function App() {
           mode={mode}
           togglemode={togglemode}
         />
-        <Alert alert="This is alert box" />
+        <Alert alert={mode==='light'? "its a light mode":"Its a dark mode"}  />
 
         <div className="container my-3">
           <Switch>

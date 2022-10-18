@@ -24,7 +24,7 @@ function TextForm(props) {
     <>
       <div
         className="container"
-        style={{ color:  props.mode === 'dark' ? 'grey' : 'white' }}
+        style={{ color:  props.mode === 'dark' ? 'grey' : 'black' }}
       >
         <h1>{props.heading}</h1>
         <div className="mb-3">
